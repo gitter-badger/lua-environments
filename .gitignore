@@ -1,0 +1,2 @@
+# Ignore all installed Lua environments:
+lua*

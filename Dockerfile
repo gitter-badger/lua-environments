@@ -3,7 +3,7 @@ MAINTAINER Alban Linard <alban@linard.fr>
 
 RUN apt-get update
 RUN apt-get --yes install sudo curl git python python-pip zip unzip
-RUN apt-get --yes install libreadline-dev libncurses5-dev
+RUN apt-get --yes install libreadline-dev libncurses5-dev libssl-dev
 RUN pip install hererocks
 
 ADD . /home/lua/

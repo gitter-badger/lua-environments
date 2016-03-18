@@ -2,7 +2,7 @@ FROM ubuntu:14.04
 MAINTAINER Alban Linard <alban@linard.fr>
 
 RUN apt-get update
-RUN apt-get --yes install sudo git python python-pip
+RUN apt-get --yes install sudo curl git python python-pip
 RUN apt-get --yes install libreadline-dev libncurses5-dev
 RUN pip install hererocks
 

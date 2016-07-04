@@ -1,4 +1,4 @@
-FROM debian/testing
+FROM debian:testing
 MAINTAINER Alban Linard <alban@linard.fr>
 
 ADD install /lua/install

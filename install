@@ -1,0 +1,27 @@
+#! /usr/bin/env bash
+
+set -e
+
+hererocks -r^ --lua=5.1    --compat=none lua51-none
+hererocks -r^ --lua=5.1    --compat=all  lua51-all
+hererocks -r^ --lua=5.1    --compat=5.1  lua51-51
+
+hererocks -r^ --lua=5.2    --compat=none lua52-none
+hererocks -r^ --lua=5.2    --compat=all  lua52-all
+hererocks -r^ --lua=5.2    --compat=5.1  lua52-51
+hererocks -r^ --lua=5.2    --compat=5.2  lua52-52
+
+hererocks -r^ --lua=5.3    --compat=none lua53-none
+hererocks -r^ --lua=5.3    --compat=all  lua53-all
+hererocks -r^ --lua=5.3    --compat=5.1  lua53-51
+hererocks -r^ --lua=5.3    --compat=5.2  lua53-52
+
+hererocks -r^ --luajit=2.0 --compat=none luajit20-none
+hererocks -r^ --luajit=2.0 --compat=all  luajit20-all
+hererocks -r^ --luajit=2.0 --compat=5.1  luajit20-51
+hererocks -r^ --luajit=2.0 --compat=5.2  luajit20-52
+
+hererocks -r^ --luajit=2.1 --compat=none luajit21-none
+hererocks -r^ --luajit=2.1 --compat=all  luajit21-all
+hererocks -r^ --luajit=2.1 --compat=5.1  luajit21-51
+hererocks -r^ --luajit=2.1 --compat=5.2  luajit21-52
